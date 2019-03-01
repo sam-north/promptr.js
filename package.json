@@ -1,0 +1,14 @@
+{
+  "name": "promptr.js",
+  "version": "1.0.0",
+  "description": "a lightweight, zero dependency javascript plugin for prompting a user",
+  "main": "index.js",
+  "repository": "https://github.com/sam-north/promptr.js",
+  "author": "Sam North",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "tslint": "^5.13.1",
+    "typescript": "^3.3.3333"
+  }
+}
