@@ -8,12 +8,10 @@
 		"files.exclude": {
 			"**/.git": true,
 			"**/node_modules": true,
-			"**/*.js": {
-				"when": "$(basename).ts"
-			},
-			"**/**.js": {
-				"when": "$(basename).tsx"
-			}
+			"build": true,
+			"dist": true,
+			"versions": true,
+			".vscode": true
 		}
 	}
 }
