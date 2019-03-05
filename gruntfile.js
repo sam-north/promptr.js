@@ -37,15 +37,10 @@ module.exports = function (grunt) {
       }
     },
     jshint: {
-      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+      files: ['src/**/*.js'],
       // configure JSHint (documented at http://www.jshint.com/docs/)
       options: {
-        globals: {
-          console: true,
-          module: true,
-          document: true
-        },
-
+        jshintrc: true
       }
     },
     watch: {
@@ -81,11 +76,12 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-replace');
 
-  grunt.registerTask('default', ['jshint',
-    'concat',
-    'cssmin',
-    'htmlmin',
-    'replace',
-    'uglify'
-  ]);
+  grunt.registerTask('default',
+    ['jshint',
+      'concat',
+      'cssmin',
+      'htmlmin',
+      'replace',
+      'uglify'
+    ]);
 };
